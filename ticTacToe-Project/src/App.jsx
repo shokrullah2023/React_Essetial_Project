@@ -1,8 +1,9 @@
-import Player from "./Player";
-import GameBoard from "./Gameboard";
+import Player from "./components/Player";
+import GameBoard from "./components/GameBoard";
 import { useState } from "react";
 
 function App() {
+  const [gameTurns, setGameTurns] = useState([]);
   const [activePlayer, setActivePlayer] = useState("X");
 
   const handleSelectSquare = () => {
